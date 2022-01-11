@@ -288,9 +288,6 @@ func testCreateSubscriptionWithValidSink(id int, eventTypePrefix, _, eventTypeTo
 		It("Should mark the Subscription with valid sink with the port suffix as ready", func() {
 			testCreatingSubscription(sink + ":8080")
 		})
-		It("Should mark the Subscription with valid sink with the port suffix and path as ready", func() {
-			testCreatingSubscription(sink + ":8080" + "/myEndpoint")
-		})
 	})
 }
 
